@@ -1,0 +1,6 @@
+<% @questions.each do |question|%>
+    <p> <%= link_to "id = #{question.id}", questions_path(id: question.id) %></p>
+    <p>question = <%= question.body%></p>
+    <p>user_id = <%= question.user_id%></p>
+<%end%>
+
